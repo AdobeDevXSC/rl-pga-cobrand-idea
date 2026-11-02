@@ -1,0 +1,22 @@
+/* cb-statement: one display-size serif line on an immersive ground */
+main .section.cb-statement-container.black {
+  padding: calc(var(--section-spacing) * 2) 0;
+}
+
+.cb-statement {
+  text-align: center;
+}
+
+.cb-statement .cb-statement-text {
+  max-width: var(--text-max-width);
+  margin: 0 auto;
+  font-family: var(--heading-font-family);
+  font-size: var(--display-font-size);
+  font-weight: 400;
+  line-height: var(--line-height-heading);
+}
+
+.cb-statement .cb-statement-attribution {
+  margin: var(--spacing-lg) 0 0;
+  font-size: var(--body-font-size-s);
+}

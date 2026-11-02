@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-02T00:00:00Z",
+  "title": "Design System: Ralph Lauren × PGA TOUR · Cinematic",
+  "_provenance": {
+    "source": "Example C · Cinematic (stardust/prototypes/pga-tour-home-C-proposed.html), chosen 2026-11-02",
+    "extends": "brand/rl/DESIGN.json",
+    "role": "Microsite design target. Inherits and never overrides the locked Ralph Lauren standard; partner values live in styles/cobrand.css."
+  },
+  "extensions": {
+    "colorMeta": {
+      "cobrand-accent": {
+        "role": "accent",
+        "displayName": "PGA TOUR Red",
+        "canonical": "#d9000a",
+        "cssVar": "--cobrand-accent",
+        "usage": "CTA rules on cobrand teasers, cobrand-accent band ground",
+        "contrast": { "onWhite": 5.31 }
+      },
+      "cobrand-accent-contrast": {
+        "role": "on-accent",
+        "canonical": "#ffffff",
+        "cssVar": "--cobrand-accent-contrast",
+        "contrast": { "onAccent": 5.31 }
+      },
+      "cobrand-accent-soft": {
+        "role": "accent-ground",
+        "displayName": "Red Tint",
+        "canonical": "#fbefee",
+        "cssVar": "--cobrand-accent-soft",
+        "contrast": { "navyOn": 14.94 }
+      },
+      "cobrand-accent-on-image": {
+        "role": "accent-on-image",
+        "canonical": "#ff9e97",
+        "cssVar": "--cobrand-accent-on-image",
+        "contrast": { "onDarkenedImage": 3.53 }
+      }
+    },
+    "motion": {
+      "register": "cinematic",
+      "gate": "prefers-reduced-motion: no-preference",
+      "easing": "cubic-bezier(.2, .7, .2, 1)",
+      "tokens": {
+        "hero-drift": { "property": "transform", "from": "scale(1.12)", "to": "scale(1)", "duration": "24s", "easing": "ease-out", "iterations": 1 },
+        "hero-rise": { "property": "opacity, transform", "from": "translateY(24px)", "duration": "1.4s", "ctaDelay": "0.5s" },
+        "reveal": { "property": "opacity, transform", "from": "translateY(28px)", "duration": "1.1s", "stagger": "0.12s", "maxStagger": 4, "threshold": 0.15 },
+        "settle": { "property": "transform", "from": "scale(1.08)", "to": "scale(1)", "duration": "2.4s" }
+      },
+      "neverAnimated": ["header", "footer", "logos", "a.button.primary and its paragraph", "teaser overlay text"]
+    }
+  },
+  "components": [
+    {
+      "name": "Statement",
+      "kind": "section",
+      "block": "cb-statement",
+      "description": "Black section with one serif line at display size and an attribution. At most one per page; verbatim, attributed quotations or programme statements only.",
+      "tokens": ["--display-font-size", "--line-height-heading", "--text-max-width", "--section-spacing", "--rl-black", "--rl-white"]
+    },
+    {
+      "name": "Motion",
+      "kind": "behaviour",
+      "block": "cb-motion",
+      "description": "Lazy site-wide enhancement applying the cinematic motion tokens."
+    }
+  ],
+  "narrative": {
+    "northStar": "The Quiet Flagship, in Motion",
+    "homepage": ["hero cobrand", "intro center narrow", "collections columns", "cb-statement", "merchandising columns", "ordering teaser cobrand", "contact center narrow cobrand"]
+  }
+}

@@ -1,0 +1,61 @@
+/* cb-motion: Cinematic motion register (DESIGN.md § Motion); only when motion is allowed */
+@media (prefers-reduced-motion: no-preference) {
+  .hero.cb-motion-hero picture img {
+    animation: cb-motion-drift 24s ease-out both;
+    transform-origin: 50% 60%;
+  }
+
+  .hero.cb-motion-hero :is(h1, h2, p) {
+    animation: cb-motion-rise 1.4s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+  }
+
+  .hero.cb-motion-hero p {
+    animation-delay: 0.5s;
+  }
+
+  .hero.cb-motion-hero p:has(picture) {
+    animation: none;
+  }
+
+  html.cb-motion main .cb-motion-reveal {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 1.1s cubic-bezier(0.2, 0.7, 0.2, 1), transform 1.1s cubic-bezier(0.2, 0.7, 0.2, 1);
+    transition-delay: var(--cb-motion-delay, 0s);
+  }
+
+  html.cb-motion main .cb-motion-reveal.is-in {
+    opacity: 1;
+    transform: none;
+  }
+
+  html.cb-motion main .cb-motion-settle {
+    overflow: hidden;
+  }
+
+  html.cb-motion main .cb-motion-settle img {
+    transform: scale(1.08);
+    transition: transform 2.4s cubic-bezier(0.2, 0.7, 0.2, 1);
+  }
+
+  html.cb-motion main .cb-motion-settle.is-in img {
+    transform: none;
+  }
+}
+
+@keyframes cb-motion-drift {
+  from { transform: scale(1.12); }
+  to { transform: scale(1); }
+}
+
+@keyframes cb-motion-rise {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}

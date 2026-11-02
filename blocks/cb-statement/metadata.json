@@ -1,0 +1,23 @@
+{
+  "variantName": "cb-statement",
+  "baseBlock": "cb-statement",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": {
+    "purpose": "one display-size serif statement on an immersive ground, with an optional attribution",
+    "typography": "heading font at the display size (60px desktop / 40px mobile), weight 400, 790px measure, centred",
+    "source": [
+      "stardust/prototypes/pga-tour-home-C-proposed.html (Cinematic direction, DESIGN.md § Components)"
+    ]
+  },
+  "contentPattern": {
+    "structure": "row 1: the statement (a heading or plain text); row 2 (optional): attribution text",
+    "rows": [
+      "statement",
+      "attribution"
+    ]
+  },
+  "options": [],
+  "usage": "One per page at most, in a section styled black: founder quotations and short programme statements.",
+  "reuseGuidance": "Only verbatim, attributed quotations or programme statements; never partner facts or claims. Style the section black (the block adds the black ground when the section has none).",
+  "memberVariantIds": []
+}
