@@ -14,29 +14,32 @@
  * - Use hex values; no gradients.
  */
 
+/* Partner: PGA TOUR (brand/cobrand/partner.json) */
 :root {
   /* partner accent: highlight bars, CTA rules, accent sections */
-  --cobrand-accent: var(--rl-navy);
+  --cobrand-accent: #d9000a; /* PGA TOUR logo red; 5.31:1 on white */
 
   /* text / UI colour that sits on --cobrand-accent */
-  --cobrand-accent-contrast: var(--rl-white);
+  --cobrand-accent-contrast: var(--rl-white); /* 5.31:1 on accent */
 
   /* quiet partner-tinted ground for "cobrand" sections */
-  --cobrand-accent-soft: var(--rl-off-white);
+  --cobrand-accent-soft: #fbefee; /* navy text 14.94:1 */
 
   /* accent used over photography (hero, teaser overlays) */
-  --cobrand-accent-on-image: var(--rl-white);
+  --cobrand-accent-on-image: #ff9e97; /* 3.53:1 on #595959 */
 
   /* header / footer partner lockup */
   --cobrand-divider-color: var(--border-color);
+
+  /* PGA TOUR shield is a vertical mark: kept compact so it reads no heavier than the wordmark */
   --cobrand-logo-height: 22px;
   --cobrand-logo-max-width: 110px;
-  --cobrand-footer-logo-height: 28px;
+  --cobrand-footer-logo-height: 40px;
 }
 
 @media (width >= 900px) {
   :root {
-    --cobrand-logo-height: 36px;
+    --cobrand-logo-height: 30px;
     --cobrand-logo-max-width: 200px;
   }
 }

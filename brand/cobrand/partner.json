@@ -1,0 +1,38 @@
+{
+  "_comment": "Partner record for the Ralph Lauren × PGA TOUR microsite. Rules: brand/rl/COBRAND-RULES.md.",
+  "partner": {
+    "name": "PGA TOUR",
+    "slug": "pga-tour",
+    "website": "https://www.pgatour.com/",
+    "programme": "Polo Golf and RLX Ralph Lauren wholesale launch for PGA TOUR and TPC course pro shops",
+    "audience": "Merchandise buyers and pro shop teams at PGA TOUR and TPC venues"
+  },
+  "source": {
+    "type": "url",
+    "url": "https://www.pgatour.com/",
+    "capturedAt": "2026-11-02",
+    "notes": "Quick capture of the partner homepage at 1440px (computed styles and header logo). Brand blue #003970 (logo field, theme colour #20487C), logo red #D9000A, UI greens #25845D / #468254, typeface Suisse Intl (not used: partner typefaces are not allowed). #003970 sits too close to RL Navy to work as an accent, so the logo red is the accent. Confirm the logo file and colours with the PGA TOUR brand team before launch."
+  },
+  "logos": {
+    "primary": "brand/cobrand/logos/pga-tour-logo.svg",
+    "onDark": "brand/cobrand/logos/pga-tour-logo.svg",
+    "alt": "PGA TOUR",
+    "notes": "Vertical shield mark (36 × 48) taken from pgatour.com; it carries its own white keyline, so it also works on dark grounds. Ask the partner for the approved horizontal lockup."
+  },
+  "colors": {
+    "accent": "#d9000a",
+    "accentContrast": "#ffffff",
+    "accentSoft": "#fbefee",
+    "accentOnImage": "#ff9e97"
+  },
+  "contrastChecks": {
+    "accentOnWhite": "5.31:1 (target 3:1)",
+    "accentContrastOnAccent": "5.31:1 (target 4.5:1)",
+    "navyOnAccentSoft": "14.94:1 (target 4.5:1)",
+    "accentOnImage": "3.53:1 on #595959, 5.23:1 on #404040 (target 3:1 on the darkened image area)"
+  },
+  "approvals": {
+    "partnerBrandTeam": null,
+    "ralphLaurenBrandTeam": null
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "variantName": "cb-motion",
+  "baseBlock": "cb-motion",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": {
+    "purpose": "applies the Cinematic motion register to the page: hero drift and rise, scroll reveals, image settle",
+    "typography": "none (no visible content)",
+    "source": [
+      "stardust/prototypes/cinematic.js (Cinematic direction, DESIGN.md § Motion)"
+    ]
+  },
+  "contentPattern": {
+    "structure": "an empty block table (one cell, may be left blank)",
+    "rows": []
+  },
+  "options": [],
+  "usage": "Once per page, in the same section as the hero, directly after it.",
+  "reuseGuidance": "Has no content. Motion is off for visitors who prefer reduced motion and never applies to the header, footer, logos or primary buttons.",
+  "memberVariantIds": []
+}
